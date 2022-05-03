@@ -1,0 +1,131 @@
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  background-color: black;
+  height: 50vh;
+  min-height: 380px;
+  width: 80vh;
+  min-width: 870px;
+  max-width: 1150px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.footer {
+  background-color: #1817dd;
+  height: 30px;
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.content {
+  /* Let the div take up the rest of the container */
+  flex-grow: 1;
+  display: flex;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.nft-container {
+  /* background-color: yellow; */
+  /* Importance level of display flex items */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft-video {
+  width: 350px;
+
+}
+
+.description {
+  /* Importance level of display flex items */
+  color: white;
+  font-size: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Can only use gap when using display flex */
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.filled-button {
+  background-color: white;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 600;
+  border-radius: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+
+.filled-button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.transparent-button {
+  color: white;
+  background: None;
+  border: 1px solid white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 600;
+  border-radius: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.transparent-button:hover {
+  background-color: #333;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.info-text {
+  color: #999;
+  font-size: 18px;
+}
+
+
+
